@@ -65,10 +65,10 @@ const formSubmit = new FormSubmit({
     button: "[data-button]",
     success: `<h1 class='success'>Mensagem enviada!</h1>
               <p class='voltar_home'>Voltar para o Home</p>
-              <a href="/index.html" class="btn_Home">Home</a> `,
+              <a href="../index.html" class="btn_Home">Home</a> `,
 
     error: `<h1 class='error'>Não foi possível enviar a sua mensagens.</h1>
             <p class='voltar_home'>Voltar para o Home</p>
-            <a href="/index.html" class="btn_Home">Home</a> `
+            <a href="../index.html" class="btn_Home">Home</a> `
 })
 formSubmit.init();
