@@ -121,6 +121,7 @@ width: 95vw;
 
 
 .mask {
+  width: 10vw;
   position: absolute;
   top: 30vw;
   left: 18vw; 
