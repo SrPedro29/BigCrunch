@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+body {
+    font-family: 'Special Elite', cursive;
+    background-color: #15161B;
+    background-image: url(../image/Bg_characters.png);
+    background-size: 100vw;
+    background-size: 100vh;
+}
+
+
+.Pages {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box {
+    display: flex;
+    width: 95vw;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header_page {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 90vw;
+    height: 60vw;
+}
+
+.header {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 7vw;
+}
+
+.list_header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.list_header a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.list_header li {
+    font-size: 2.5vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    padding: 3vw 0 2vw 0;
+}
+
+.list_header li:hover {
+    border-bottom: 0.2vw solid #000000;
+
+}
+
+.logo {
+    width: 10vw;
+}
+
+.paper_1 {
+    width: 90vw;
+    margin-top: 4vw;
+}
+
+#paper_2 {
+    position: relative;
+    width: 90vw;
+    transform: translateY(-3vw);
+}
+
+#paper_2 img {
+    width: 90vw;
+}
+
+.text_paper_1 {
+    position: absolute;
+    font-size: 1.7vw;
+    width: 25vw;
+    text-align: center;
+    top: 10vw;
+    left: 5vw;
+}
+
+.text_paper_2 {
+    position: absolute;
+    font-size: 1.7vw;
+    width: 25vw;
+    text-align: center;
+    top: 17vw;
+    left: 5vw;
+}
+
+.btn_sobreNos {
+    position: absolute;
+    font-size: 2vw;
+    padding: 1vw;
+    border-radius: 1vw;
+    font-family: 'Special Elite', cursive;
+    top: 20vw;
+    left: 11.5vw;
+    text-decoration: none;
+    color: #000000;
+    border: 0.1vw solid #000000;
+}
+
+.btn_sobreNos:active {
+    box-shadow: 0.6vw 0.6vw 1vw#000000 inset;
+    transform: scale(0.95);
+    outline: none;
+}
+
+.stop {
+    animation-name: down;
+    animation-duration: 2s;
+}
+
+.play {
+    animation-name: up;
+    animation-duration: 2s;
+}
+
+.character_conteiner {
+    position: relative;
+    justify-content: center;
+    width: 80vw;
+}
+
+.selection {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 8vw;
+    align-items: center;
+    padding: 1vw;
+    background-color: #E4E6BD;
+    font-family: 'Special Elite', cursive;
+    font-size: 2vw;
+    bottom: 3vw;
+    float: right;
+}
+
+.characterSelect {
+    display: inline-block;
+    margin: 0.5vw;
+    border: none;
+    background-color: transparent;
+}
+
+.characterSelect img {
+    width: 5vw;
+    padding: 1vw 1vw 0vw 1vw;
+    background-color: #868281;
+    border: 0.2vw solid #000000;
+    transition: 0.2s;
+    box-shadow: 0.6vw 0.6vw 1vw#000000;
+}
+
+.characterSelect img:active {
+    box-shadow: 0.6vw 0.6vw 1vw#000000 inset;
+    transform: scale(0.95);
+    outline: none;
+}
+
+.hide {
+    animation-name: hide;
+    animation-duration: 1.5s;
+}
+
+.show {
+    animation-name: show;
+    animation-duration: 1.5s;
+}
+
+.banner {
+    position: absolute;
+    width: 17vw;
+    left: -3vw;
+    top: 5vw;
+}
+
+.acess {
+    position: absolute;
+    width: 25vw;
+    bottom: 3vw;
+    left: 13vw;
+    transform: rotate(-5deg);
+}
+
+.identity {
+    position: absolute;
+    width: 12vw;
+    bottom: 2vw;
+    right: 30vw;
+    transform: rotate(-15deg);
+}
+
+.icon {
+    position: absolute;
+    width: 7vw;
+    right: 12vw;
+    top: 20vw;
+    transform: rotate(20deg);
+}
+
+.hesiodus {
+    position: absolute;
+    width: 40vw;
+    right: 6vw;
+    transform: rotate(3deg);
+}
+
+@keyframes up {
+    0% {
+        transform: translateY(-3vw);
+    }
+
+    50% {
+        transform: translateY(-50vw);
+    }
+
+    100% {
+        transform: translateY(-3vw);
+    }
+}
+
+@keyframes down {
+    0% {
+        transform: translateY(-3vw);
+
+    }
+
+    50% {
+        transform: translateY(-50vw);
+    }
+
+    100% {
+        transform: translateY(-3vw);
+    }
+}
+
+@keyframes show {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes hide {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

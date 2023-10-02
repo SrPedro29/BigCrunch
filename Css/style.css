@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Kadwa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400&family=Kadwa&family=Special+Elite&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-size: 100%;
+  background: #15161B;
+  background-image: url(../image/Bg_characters.png);
+  background-attachment: fixed;
+  background-size: 100vw;
+  background-size: 100vh;
+  font-family: 'Special Elite', cursive;
+
+}
+
+
+.Pages {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+}
+
+.box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.header_page{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin:3vw 0 2vw 0;
+ 
+  
+}
+
+.header{
+  position:absolute;
+  display: flex;
+  align-items: center;
+  margin: 4vw;
+}
+
+.list_header{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  
+}
+.list_header a{
+  text-decoration: none;
+  color: #000000;
+}
+.list_header li{
+  font-size: 2.5vw;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  padding: 3vw 0 2vw 0;
+  
+}
+
+.list_header li:hover{
+  border-bottom:0.2vw solid #000000 ;
+  
+}
+
+.logo{
+  width: 10vw;
+}
+
+.paper_bg{
+width: 95vw;
+}
+
+
+.container{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  width: 90vw;
+  height: 50vw;
+  margin-top: 2vw;
+  margin: auto;
+  flex-direction: column;
+  top: 17vw;
+
+}  
+
+.board{
+  width: 80vw;
+  height: 50vw;
+  border: 2vw solid #000000b0;
+
+}
+
+
+.img {
+  position: relative;
+
+  
+}
+
+
+.bird  {
+  position: absolute;
+  width: 15vw;
+  top: 5vw;
+  left: 40vw; 
+}
+
+
+
+.mask {
+  position: absolute;
+  top: 30vw;
+  left: 18vw; 
+}
+
+.guy{
+  width: 10vw;
+  position: absolute;
+  top: 5vw;
+  left: 28vw; 
+}
+
+.first-note {
+  width: 20vw;
+position: absolute;
+top: 5vw;
+left: 6vw;
+}
+
+.second-note {
+width: 20vw;
+position: absolute;
+top: 25vw;
+left: 32vw; 
+}
+
+.third-note {
+width: 20vw;
+position: absolute;
+top: 5vw;
+right: 4vw; 
+}
+.rodape_sobre_nos{
+  display: flex;
+  align-items: center;
+  width: 30vw;
+  flex-direction: column;
+  position: relative;
+  left: 1vw;
+}
+.text_paper_1{
+  position: relative;
+  font-size: 1.7vw;
+  width: 35vw;
+  text-align: center;
+  top: 2vw;
+  font-family: 'Special Elite', cursive;
+
+}
+.text_paper_2{
+  position: relative;
+  font-size: 1.7vw;
+  width: 25vw;
+  text-align: center;
+  top: 3vw;
+  font-family: 'Special Elite', cursive;
+ 
+}
+.btn_sobreNos{
+  position: relative;
+  font-size: 2vw;
+  padding: 1vw;
+  border-radius: 1vw;
+  font-family: 'Special Elite', cursive;
+  top: 5vw;
+  text-decoration: none;
+  color: #000000;
+  border: 0.2vw solid #000000;
+}
+.btn_sobreNos:active{
+  box-shadow: 0.6vw 0.6vw 1vw#000000 inset;
+  
+  transform: scale(0.95);
+  outline: none;
+}
+
+.formulario{
+  position: absolute;
+  width: 61vw;
+  top: 20vw;
+  display: flex;
+  flex-direction: column;
+ 
+  
+}
+.title_contato{
+  font-size: 3.5vw;
+  text-align: center;
+  margin-bottom: 2vw;
+}
+
+form label, form legend{
+  display: block;
+  font-size: 2vw;
+  margin: 0 0 0.9vw;
+  flex-direction: column;
+}
+
+.input-padrao{
+  display: block;
+  margin: 0 0 2vw;
+  padding: 1.3vw 2vw;
+  width: 40vw;
+ font-family: 'Special Elite', cursive;;
+ font-size: 1.2vw;
+ border-radius: 1vw;
+ border: none;
+ background-color: #DAE0B3;
+ box-shadow: 0.4vw 0.4vw 1vw#000000af ;
+}
+
+
+.enviar{
+  position: relative;
+  font-size: 2vw;
+  padding: 1vw;
+  border-radius: 1vw;
+  font-family: 'Special Elite', cursive;
+  text-decoration: none;
+  color: #000000;
+  border: 0.2vw solid #000000;
+  background-color: transparent;
+  box-shadow: 0.6vw 0.6vw 1vw#000000af ;
+}
+
+.enviar:disabled{
+  cursor: not-allowed;
+  box-shadow: none; 
+  opacity: 0.5;
+}
+
+.success, .error{
+  font-size: 3.5vw;
+  text-align: center;
+  margin-bottom: 2vw;
+}
+
+.success{
+  font-size: 3.5vw;
+  text-align: center;
+  margin-bottom: 2vw;
+  color: #adff2f;
+}
+
+.error{
+  color: #ff6347;
+}
+.voltar_home{
+  font-size: 2vw;
+  text-align: center;
+  margin-bottom: 2vw;
+}
+
+.btn_Home{
+  position: relative;
+ justify-content: center;
+  font-size: 2vw;
+  padding: 1vw 2vw 1vw 2vw;
+  border-radius: 1vw;
+  left:26vw;
+  font-family: 'Special Elite', cursive;
+  text-decoration: none;
+  color: #000000;
+  border: 0.2vw solid #000000;
+  background-color: transparent;
+  box-shadow: 0.6vw 0.6vw 1vw#000000af ;
+
+}
+
